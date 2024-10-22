@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 type LogoProps = {
     src: StaticImageData,
@@ -9,13 +10,15 @@ type LogoProps = {
 
 export default function Logo(
     { src, alt, width, height }: LogoProps,
-){
+) {
     return (
-        <Image
-            src={src}
-            alt={alt}
-            width={width}
-            height={height}
-        />
+        <Link href='/'>
+            <Image
+                src={src}
+                alt={alt}
+                width={width}
+                height={height}
+            />
+        </Link>
     )
 }
