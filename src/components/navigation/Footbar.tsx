@@ -1,5 +1,5 @@
-import { pages } from '@/constants/pages'
-import Navlink from "@/components/navlink"
+import { pages } from '../../constants/pages'
+import Navlink from "../navlink"
 
 export default function Footbar() {
     return (

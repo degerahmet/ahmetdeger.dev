@@ -1,9 +1,9 @@
 import Logo from "../Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
-import logoPNG from "@/app/logo-2.png";
+import logoPNG from "../../app/logo-2.png";
 import Link from "next/link";
-import { socialMediaLinks } from "@/constants/social-links";
+import { socialMediaLinks } from "../../constants/social-links";
 
 export default function TopBar() {
     return (

@@ -1,14 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import useWindowDimensions from "@/hooks/useWindowDimensions";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
-import Logo from "@/components/Logo";
-import longLogo from "@/app/logo-2.png";
-import shortLogo from "@/app/logo.png";
+import Logo from "../Logo";
+import longLogo from "../../app/logo-2.png";
+import shortLogo from "../../app/logo.png";
 
-import { pages } from '@/constants/pages'
-import Navlink from "@/components/navlink"
+import { pages } from '../../constants/pages'
+import Navlink from "../navlink"
 
 export default function Sidebar() {
     const screenSize = useWindowDimensions();

@@ -1,4 +1,4 @@
-import { NavlinkProps } from "@/props/components"
+import { NavlinkProps } from "../props/components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Link from "next/link"
 
