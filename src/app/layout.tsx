@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import TopBar from "@/components/navigation/TopBar";
-import Sidebar from "@/components/navigation/Sidebar";
-import Footbar from "@/components/navigation/Footbar";
+import TopBar from "../components/navigation/TopBar";
+import Sidebar from "../components/navigation/Sidebar";
+import Footbar from "../components/navigation/Footbar";
 
 export const metadata: Metadata = {
   title: "Ahmet Deger",
