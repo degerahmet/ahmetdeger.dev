@@ -1,21 +1,8 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-
 import TopBar from "@/components/navigation/TopBar";
 import Sidebar from "@/components/navigation/Sidebar";
 import Footbar from "@/components/navigation/Footbar";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "Ahmet Deger",
@@ -31,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className='dark'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`antialiased`}
       >
         <div className="flex flex-col md:flex-row h-screen">
           <TopBar />
