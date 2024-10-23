@@ -1,10 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Logo from "@/components/Logo";
 import longLogo from "@/app/logo-2.png";
@@ -37,7 +34,7 @@ export default function Sidebar() {
             default:
                 break;
         }
-    }, [window.innerWidth])
+    }, [])
 
     return (
         <div className="hidden md:block bg-[#00000085] border-r border-r-[#30363d] md:min-w-20 lg:min-w-60 flex flex-col font-normal">

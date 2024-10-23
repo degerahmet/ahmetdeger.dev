@@ -1,4 +1,5 @@
-'use client'
+'use client';
+
 import {useState, useEffect} from 'react'
 
 const findScreenSize = (width:number) => {
@@ -17,11 +18,11 @@ const findScreenSize = (width:number) => {
 
 const useWindowDimensions = () => {
     const [windowDimensions, setWindowDimensions] = useState({
-        width: window.innerWidth,
-        height: window.innerHeight
+        width: typeof window !== 'undefined' ? window.innerWidth : null,
+        height: typeof window !== 'undefined' ? window.innerHeight : null
     });
 
-    const [screenSize, setScreenSize] = useState(findScreenSize(window.innerWidth))
+    const [screenSize, setScreenSize] = useState(typeof window !== 'undefined' ? findScreenSize(window.innerWidth): null)
 
     useEffect(()=> {
         const handleResize = () => {
@@ -30,10 +31,12 @@ const useWindowDimensions = () => {
                 height: window.innerHeight
             });
         };
-        window.addEventListener("resize", handleResize);
-        setScreenSize(findScreenSize(windowDimensions.width))
+        if (typeof window !== 'undefined'){   
+            window.addEventListener("resize", handleResize);
+            setScreenSize(findScreenSize(window.innerWidth))
+        }
         return () => window.removeEventListener("resize", handleResize)
-    }, [window.innerWidth]);
+    }, [windowDimensions.width, screenSize]);
 
     return screenSize;
 }
