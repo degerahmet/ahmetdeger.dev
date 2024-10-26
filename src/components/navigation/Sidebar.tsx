@@ -9,11 +9,8 @@ import shortLogo from "../../app/logo.png";
 
 import { pages } from '../../constants/pages'
 import Navlink from "../navlink"
-import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { socialMediaLinks } from "@/constants/social-links";
-import { faGithub, faLinkedin, faTwitter, faXTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons/faLinkedinIn";
+import { faGithub, faLinkedin, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 
 export default function Sidebar() {
     const screenSize = useWindowDimensions();
