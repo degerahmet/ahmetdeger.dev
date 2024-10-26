@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
+import  { Ubuntu } from 'next/font/google';
 import "./globals.css";
 import TopBar from "../components/navigation/TopBar";
 import Sidebar from "../components/navigation/Sidebar";
 import Footbar from "../components/navigation/Footbar";
+
+const ubuntu = Ubuntu({
+  weight:"500",
+  style: "normal",
+  subsets: ['latin']
+})
 
 export const metadata: Metadata = {
   title: "Ahmet Deger",
@@ -18,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" className='dark'>
       <body
-        className={`antialiased`}
+        className={`${ubuntu.className} antialiased`}
       >
         <div className="flex flex-col md:flex-row h-screen">
           <TopBar />

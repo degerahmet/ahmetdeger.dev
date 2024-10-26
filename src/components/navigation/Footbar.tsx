@@ -7,7 +7,7 @@ export default function Footbar() {
             <ul className="list-none flex flex-row justify-between px-10">
                 {pages.map((page, index) => {
                     return (
-                        <Navlink key={index} type='foot' href={page.href} icon={page.icon} iconSize="xl" navText={page.title} />
+                        <Navlink key={index} type='foot' href={page.href} icon={page.icon} iconSize="2xl" navText={page.title} />
                     )
                 })}
             </ul>
