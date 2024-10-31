@@ -1,0 +1,87 @@
+{
+    "personalDetail": {
+        "firstName": "Ahmet",
+        "lastName": "Deger",
+        "about": "Experienced software engineer with a background in backend development using Python. Skilled in Django and Flask, with expertise in React.js using both JavaScript and TypeScript. Known for a fast learning ability and continuous exploration of new technologies and best practices to deliver high-quality software solutions.",
+        "title": "Software Engineer"
+    },
+    "socialMediaLinks": {
+        "github": "https://github.com/degerahmet",
+        "linkedIn": "https://www.linkedin.com/in/ahmetdeger/",
+        "X": "https://x.com/0xdeger",
+        "stackOverflow": "https://stackoverflow.com/users/19980528/ahmet-deger"
+    },
+    "experiences": [
+        {
+            "id": 1,
+            "title": "Software Backend Engineer",
+            "company": "Ginoa.io",
+            "location": "Remote",
+            "startingDate": "2022-10",
+            "endingDate": "2023-06",
+            "bulletPoints": [
+                "Developed and maintained a robust Python Django backend, managing API endpoints and integrating AWS Lambda microservices for enhanced scalability and performance.",
+                "Optimized task scheduling and asynchronous processing by integrating the Celery framework and utilized AWS SQS for efficient messaging between application components.",
+                "Contributed to system architecture and technical decision-making, identifying and resolving performance bottlenecks to ensure a smooth user experience during high-demand events."
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Founding Software Engineer",
+            "company": "Partisepeti.com",
+            "location": "Remote",
+            "startingDate": "2020-05",
+            "endingDate": "2022-10",
+            "bulletPoints": [
+                "Designed and implemented multi-vendor e-commerce and inventory management API services with Django REST Framework integrated relational databases using Python.",
+                "Architected and developed core backend systems using Django, employing regression testing and pair programming methodologies to ensure high-quality, maintainable code.",
+                "Led the deployment strategy, proficiently deploying staging and production versions to AWS EC2. Applied GitHub Actions and automated CI/CD pipelines to streamline processes."
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Data Analyst Intern",
+            "company": "PwC",
+            "location": "Istanbul, Turkey",
+            "startingDate": "2020-01",
+            "endingDate": "2020-05",
+            "bulletPoints": [
+                "Efficiently processed and manipulated data using Alteryx and Microsoft Excel, ensuring accuracy and streamlined workflows.",
+                "Collaborated closely with cross-functional teams and proactively developed the skills necessary to thrive in a diverse workplace."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "id": 1,
+            "degree": "Associate of Applied Science in Software Development",
+            "year": "Expected 2025",
+            "schoolName": "Bellevue College"
+        },
+        {
+            "id": 2,
+            "degree": "BA, Labor Economics and Industrial Relations",
+            "year": "2016 - 2021",
+            "schoolName": "Marmara University"
+        }
+    ],
+    "skills": [
+        "Python", 
+        "Django", 
+        "Flask", 
+        "JavaScript", 
+        "React", 
+        "TypeScript", 
+        "Node.js", 
+        "PostgreSQL", 
+        "MongoDB", 
+        "SQLite3", 
+        "MS Excel", 
+        "Linux", 
+        "Git", 
+        "Docker", 
+        "DigitalOcean", 
+        "AWS", 
+        "Jira"
+    ]
+}

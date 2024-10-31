@@ -36,13 +36,13 @@ export default function Sidebar() {
             default:
                 break;
         }
-    }, [])
+    }, [screenSize])
 
     return (
         <div className="hidden md:block bg-[#00000085] border-r border-r-[#30363d] md:min-w-20 lg:min-w-60 flex flex-col font-normal p-5 items-stretch">
             <div className="z-[3] flex flex-1 flex-col h-full justify-between xl:items-stretch">
-                <div className="flex flex-col">
-                    <Logo src={logo === 'long' ? longLogo : shortLogo} alt="logo" width={logo === 'long' ? 200 : 50} height={logo === 'long' ? 200 : 50} />
+                <div className="flex flex-col items-center justify-center mb-5">
+                    <Logo src={logo === 'long' ? longLogo : shortLogo} alt="logo" width={logo === 'long' ? 200 : 80} height={logo === 'long' ? 200 : 80} />
                 </div>
                 <div className="gap-3 flex flex-1 flex-col">
                     <ul className="list-none ">

@@ -25,13 +25,13 @@ export default function RootLayout({
   return (
     <html lang="en" className='dark'>
       <body
-        className={`${ubuntu.className} antialiased`}
+        className={`${ubuntu.className} antialiased `}
       >
         <div className="flex flex-col md:flex-row h-screen">
           <TopBar />
           <Sidebar />
 
-          <main className="flex-1 overflow-y-auto px-5 pt-20">
+          <main className="flex-1 overflow-y-auto px-5 py-20 md:py-5">
             {children}
           </main>
 
