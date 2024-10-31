@@ -56,8 +56,8 @@ export default function Sidebar() {
                 <div>
                     <ul className="list-none">
                         <Navlink type='side' href={socialMediaLinks.X} icon={faXTwitter} iconSize="xl" navText={`Follow`} />
-                        <Navlink type='side' href={socialMediaLinks.X} icon={faGithub} iconSize="xl" navText={`GitHub`} />
-                        <Navlink type='side' href={socialMediaLinks.X} icon={faLinkedin} iconSize="xl" navText={`Connect`} />
+                        <Navlink type='side' href={socialMediaLinks.github} icon={faGithub} iconSize="xl" navText={`GitHub`} />
+                        <Navlink type='side' href={socialMediaLinks.linkedIn} icon={faLinkedin} iconSize="xl" navText={`Connect`} />
                     </ul>
                 </div>
             </div>
