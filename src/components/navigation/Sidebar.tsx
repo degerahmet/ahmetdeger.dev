@@ -10,7 +10,8 @@ import shortLogo from "../../app/logo.png";
 import { pages } from '../../constants/pages'
 import Navlink from "../navlink"
 import { socialMediaLinks } from "@/constants/social-links";
-import { faGithub, faLinkedin, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Sidebar() {
     const screenSize = useWindowDimensions();
@@ -55,9 +56,18 @@ export default function Sidebar() {
                 </div>
                 <div>
                     <ul className="list-none">
-                        <Navlink type='side' href={socialMediaLinks.X} icon={faXTwitter} iconSize="xl" navText={`Follow`} />
-                        <Navlink type='side' href={socialMediaLinks.github} icon={faGithub} iconSize="xl" navText={`GitHub`} />
-                        <Navlink type='side' href={socialMediaLinks.linkedIn} icon={faLinkedin} iconSize="xl" navText={`Connect`} />
+                        {socialMediaLinks.map((socialMediaLink, index) => {
+                            return (
+                                <Link key={index} href={`${socialMediaLink.url}`} target="_blank">
+                                    <li className="transition ease-in-out delay-25 leading-10 my-2 hover:bg-slate-900 rounded-full p-2 text-lg flex flex-row hover:-translate-y-1 hover:scale-110 duration-300">
+                                        <span className="pl-2 flex flex-none w-14 self-center justify-center items-center">
+                                        <FontAwesomeIcon icon={socialMediaLink.icon} size='xl' />
+                                        </span>
+                                        <span className="flex-initial hidden lg:inline-block">{socialMediaLink.text}</span>
+                                    </li>
+                                </Link>
+                            )
+                        })}
                     </ul>
                 </div>
             </div>
