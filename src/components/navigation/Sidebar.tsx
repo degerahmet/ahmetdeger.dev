@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 import Logo from "../Logo";
-import longLogo from "../../app/logo-2.png";
-import shortLogo from "../../app/logo.png";
+import longLogo from "@/assets/images/logo-2.png";
+import shortLogo from "@/assets/images/logo.png";
 
 import { pages } from '../../constants/pages'
 import Navlink from "../navlink"

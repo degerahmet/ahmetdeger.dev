@@ -1,6 +1,6 @@
 import Logo from "../Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import logoPNG from "../../app/logo-2.png";
+import logoPNG from "@/assets/images/logo-2.png";
 import Link from "next/link";
 import { socialMediaLinks } from "../../constants/social-links";
 

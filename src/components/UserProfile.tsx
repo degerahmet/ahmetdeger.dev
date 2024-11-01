@@ -2,7 +2,7 @@
 import React from 'react';
 import Picture from './Picture';
 
-import picture from '@/app/picture.jpeg'
+import picture from '@/assets/images/picture.jpeg';
 
 interface UserProfileProps {
   firstName: string;
