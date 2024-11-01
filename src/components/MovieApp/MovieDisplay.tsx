@@ -1,6 +1,5 @@
 import React from 'react';
 import { MovieDisplayProps } from '@/types/movieAppInterfaces';
-import Image from 'next/image';
 
 const MovieDisplay: React.FC<MovieDisplayProps> = ({ movie }) => (
     <div className="mt-6 text-white">
