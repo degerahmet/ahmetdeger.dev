@@ -6,6 +6,7 @@ import ProjectCard from './ProjectCard';
 import { Project } from '@/types/projectInterfaces';
 
 import randomMovieSuggestion from '@/assets/images/random_movie_suggestion.gif';
+import objectDetection from '@/assets/images/object-detection.webp';
 
 export default function ProjectShowcase() {
   const router = useRouter();
@@ -22,6 +23,13 @@ export default function ProjectShowcase() {
       demoUrl: '/projects/movie-suggestion',
       browserUrl: 'https://randomovie.ahmetdeger.dev'
     },
+    {
+      title: 'Object Detection',
+      description: 'This is an object detection app that uses the TensorFlow.js library and the COCO-SSD model to detect objects in real-time.',
+      imageUrl: objectDetection,
+      demoUrl: '/projects/object-detection',
+      browserUrl: 'https://object-detection.ahmetdeger.dev'
+    }
   ];
 
   return (
