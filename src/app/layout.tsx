@@ -31,7 +31,7 @@ export default function RootLayout({
           <TopBar />
           <Sidebar />
 
-          <main className="flex-1 overflow-y-auto px-5 py-20 md:py-5 ">
+          <main className="flex-1 overflow-y-auto px-5 pt-20 pb-52 md:py-5 ">
             {children}
           </main>
 
