@@ -8,7 +8,7 @@ const Home: React.FC = () => {
       <WelcomeSection
         name="Ahmet Deger"
         role="Software Development Engineer"
-        githubUrl="https://github.com/degerahmet"
+        githubUrl="https://github.com/degerahmet/ahmetdeger.dev"
       />
       <SnakeGame />
     </div>
