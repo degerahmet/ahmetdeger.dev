@@ -6,9 +6,10 @@ interface GameOverlayProps {
   gameState: GameState;
   onStart: () => void;
   onReset: () => void;
+  onLevelUp?: () => void;
 }
 
-export const GameOverlay: React.FC<GameOverlayProps> = ({ gameState, onStart, onReset }) => {
+export const GameOverlay: React.FC<GameOverlayProps> = ({ gameState, onStart, onReset, onLevelUp }) => {
   if (gameState === 'playing') return null;
 
   return (
@@ -31,11 +32,16 @@ export const GameOverlay: React.FC<GameOverlayProps> = ({ gameState, onStart, on
           </div>
         )}
         {gameState === 'won' && (
-          <div>
-            <div className="text-[#43D9AD] text-xl mb-4">WELL DONE!</div>
-            <Button variant="primary" onClick={onReset}>
-              play-again
-            </Button>
+          <div className="flex flex-col gap-4">
+            <div className="text-[#43D9AD] text-xl">WELL DONE!</div>
+            <div className="flex items-center gap-4">
+              <Button variant="default" onClick={onReset}>
+                play-again
+              </Button>
+              <Button variant="primary" onClick={onLevelUp}>
+                level-up
+              </Button>
+            </div>
           </div>
         )}
       </div>

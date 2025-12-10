@@ -68,7 +68,8 @@ export const useSnakeGame = () => {
       if (newHead.x === food.x && newHead.y === food.y) {
         setFood(generateFood());
         // Check win condition
-        if (prevSnake.length === GRID_SIZE * GRID_SIZE - 1) {
+        // Win after eating 5 foods
+        if (prevSnake.length >= 5) {
           setGameState('won');
           return prevSnake;
         }
@@ -93,7 +94,7 @@ export const useSnakeGame = () => {
     ) {
       return;
     }
-    
+
     setDirection(newDirection);
   }, [gameState, lastDirection]);
 
@@ -137,6 +138,7 @@ export const useSnakeGame = () => {
     gameState,
     resetGame,
     handleStart,
+    handleDirectionChange,
     GRID_SIZE,
   };
 };
