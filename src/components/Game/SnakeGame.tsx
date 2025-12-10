@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSnakeGame } from './useSnakeGame';
 import GameBoard from './GameBoard';
+import GameInfo from './GameInfo';
 import GameControls from './GameControls';
 import GameOverlay from './GameOverlay';
 
@@ -16,7 +17,8 @@ export const SnakeGame: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#011627] rounded-lg p-6 w-full max-w-[400px] mx-auto shadow-xl border border-[#1E2D3D]">
+    <div className="bg-[#011627] rounded-lg p-6 w-full max-w-[400px] mx-auto mb-16 shadow-xl border border-[#1E2D3D]">
+      <GameInfo foodCount={snake.length} />
       <div className="relative w-full aspect-square">
         <GameBoard
           snake={snake}
@@ -32,7 +34,6 @@ export const SnakeGame: React.FC = () => {
         />
       </div>
       <GameControls
-        foodCount={snake.length}
         onDirectionChange={handleDirectionChange}
       />
     </div>

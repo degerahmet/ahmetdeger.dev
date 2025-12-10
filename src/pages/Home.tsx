@@ -4,7 +4,7 @@ import WelcomeSection from '../components/Home/WelcomeSection';
 
 const Home: React.FC = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-8 p-8 min-h-[calc(100vh-116px)]">
+    <div className="flex flex-col lg:flex-row items-center justify-center gap-8 p-8 min-h-[calc(100vh-116px)]">
       <WelcomeSection
         name="Ahmet Deger"
         role="Software Development Engineer"
