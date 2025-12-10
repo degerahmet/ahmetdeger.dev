@@ -3,10 +3,11 @@ import React from 'react';
 interface WelcomeSectionProps {
   name: string;
   role: string;
-  githubUrl: string;
+  gh_url: string;
+  gh_url_view: string;
 }
 
-const WelcomeSection: React.FC<WelcomeSectionProps> = ({ name, role, githubUrl }) => {
+const WelcomeSection: React.FC<WelcomeSectionProps> = ({ name, role, gh_url, gh_url_view }) => {
   return (
     <div className="max-w-xl">
       <p className="text-[#607B96] mb-2">Hi all. I am</p>
@@ -14,17 +15,18 @@ const WelcomeSection: React.FC<WelcomeSectionProps> = ({ name, role, githubUrl }
       <h2 className="text-[#4D5BCE] text-xl mb-6">&gt; {role}</h2>
       <div className="text-[#607B96]">
         <p>// complete the game to continue</p>
-        <p>// you can also see it on my Github page</p>
-        <p className="text-[#E99287]">
-          const{' '}
-          <span className="text-[#4D5BCE]">githubLink</span> ={' '}
+        <p className="text-[#569cd6]">
+          let{' '}
+          <span className="text-[#9CDCFE]">ghlink;</span>
+          <br />
+          <span className="text-[#9CDCFE]">ghlink</span> ={' '}
           <a
-            href={githubUrl}
+            href={gh_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#E99287] hover:underline"
+            className="text-[#CE9178] hover:underline"
           >
-            "{githubUrl}"
+            "{gh_url_view}"
           </a>
         </p>
       </div>

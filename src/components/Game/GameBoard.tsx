@@ -18,7 +18,7 @@ const GameBoard: React.FC<GameBoardProps> = ({ snake, food, gridSize }) => {
 
   return (
     <div
-      className="relative bg-[#01080E] rounded border-2 border-[#1E2D3D] w-full h-full"
+      className="relative bg-[#01080E] rounded border-4 border-[#E99287] w-full h-full shadow-inner"
     >
       {snake.map((segment, i) => (
         <div

@@ -71,7 +71,7 @@ export const useSnakeGame = () => {
         // Win after eating 5 foods
         if (prevSnake.length >= 5) {
           setGameState('won');
-          return prevSnake;
+          return [newHead, ...prevSnake];
         }
         return [newHead, ...prevSnake];
       }

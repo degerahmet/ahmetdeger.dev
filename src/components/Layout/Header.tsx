@@ -12,7 +12,9 @@ const Header: React.FC = () => {
     <header className="bg-[#011627] border-b border-[#1E2D3D] sticky top-0 z-50">
       <div className="flex items-center justify-between md:justify-start">
         <div className="text-[#607B96] px-4 py-4 border-r border-[#1E2D3D] w-full md:w-auto flex justify-between items-center">
-          <span className="text-[#FEA55F]">ahmet-deger</span>
+          <Link to="/" className="text-[#CE9178] hover:text-[#FEA55F]">
+            <span>ahmet-deger</span>
+          </Link>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden text-[#607B96] hover:text-white"
